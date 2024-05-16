@@ -1,0 +1,18 @@
+[data-section="section"] section {
+  display: none;
+}
+
+[data-section="section"] section.activated {
+  display: block;
+}
+
+[data-section="section"] section.activated.drop-right {
+  animation: drop-right 0.7s forwards;
+  /* drop= nome da animação no @keyframes;
+  0.7s = tempo de duração da animação;
+  forwards = a animação permanece no posição 'to' do @keyframes  */
+}
+
+[data-section="section"] section.activated.drop-down {
+  animation: drop-down 0.7s forwards;
+}
