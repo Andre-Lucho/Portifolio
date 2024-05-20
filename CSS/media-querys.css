@@ -1,0 +1,31 @@
+@media (max-width: 1500px) {
+  .main-structure {
+    display: grid;
+    grid-template:
+      ". header" 1fr
+      "side-nav main-content" 1fr
+      "side-nav main-content" 1fr
+      "footer footer" 1fr
+      / 1fr 2fr;
+  }
+
+  .header {
+    grid-area: header;
+    grid-template:
+      ". title nav"
+      /0.8fr 0.5fr;
+    /* grid-template-columns: 0.8fr; */
+    justify-content: flex-start;
+  }
+
+  .title {
+    display: block;
+  }
+  .title span {
+    margin-left: 0;
+  }
+
+  .nav {
+    margin-left: 5rem;
+  }
+}
