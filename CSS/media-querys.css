@@ -1,12 +1,12 @@
-@media (max-width: 1500px) {
+@media (max-width: 1535px) {
   .main-structure {
     display: grid;
     grid-template:
-      ". header" 1fr
-      "side-nav main-content" 1fr
-      "side-nav main-content" 1fr
-      "footer footer" 1fr
-      / 1fr 2fr;
+      ". header" 0.7fr
+      "side-nav main-content ." 1fr
+      "side-nav main-content ." 1fr
+      "footer footer" 0.5fr
+      / 1fr 2fr 50px;
   }
 
   .header {
@@ -14,8 +14,6 @@
     grid-template:
       ". title nav"
       /0.8fr 0.5fr;
-    /* grid-template-columns: 0.8fr; */
-    justify-content: flex-start;
   }
 
   .title {
@@ -29,3 +27,7 @@
     margin-left: 5rem;
   }
 }
+
+/* 1150 */
+
+/* 800 */

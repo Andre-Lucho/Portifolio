@@ -21,3 +21,15 @@
     transform: translate3d(0px, 0px, 0px);
   }
 }
+
+@keyframes dropdown-submenu {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, -20px, 0px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 5px, 0px);
+  }
+}

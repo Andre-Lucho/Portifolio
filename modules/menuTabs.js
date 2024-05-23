@@ -1,7 +1,14 @@
 export default function menuTabs() {
+  // Variáveis
   const mainContent = Array.from(
     document.querySelectorAll(".main-content section")
   );
+  const sideButtons = document.querySelectorAll(".buttons img");
+  const sections = document.querySelectorAll(
+    "[data-section='section'] section"
+  );
+  const sideLinks = document.querySelectorAll(".buttons a");
+  const active = "activated";
 
   mainContent.forEach((item, i) => {
     const counter = mainContent.length - i;
@@ -10,22 +17,9 @@ export default function menuTabs() {
       : (item.dataset.tab = "drop-down");
   });
 
-  // Variaveis
-
-  const sideButtons = document.querySelectorAll(".buttons img");
-
-  const sections = document.querySelectorAll(
-    "[data-section='section'] section"
-  );
-
-  const sideLinks = document.querySelectorAll(".buttons a");
-
-  const active = "activated";
-
   sections[0].classList.add(active);
 
   // Verificação e Função Callback do evento
-
   if (sideButtons.length === sections.length) {
     function tabActivation(i) {
       sections.forEach((item) => {
@@ -33,9 +27,9 @@ export default function menuTabs() {
       });
 
       const imgPosition = sections[i].dataset.tab;
-      const imgActive = sections[i].classList.add(active, imgPosition);
+      sections[i].classList.add(active, imgPosition);
       const linksPosition = sideLinks[i].dataset.tab;
-      const linkActive = sideLinks[i].classList.add(active, linksPosition);
+      sideLinks[i].classList.add(active, linksPosition);
     }
 
     sideButtons.forEach((img, i) => {

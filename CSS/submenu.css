@@ -1,0 +1,44 @@
+[data-submenu] {
+  position: relative;
+}
+
+[data-submenu] .sub-menu {
+  display: none;
+}
+
+[data-submenu].activated .sub-menu,
+[data-submenu]:hover .sub-menu {
+  display: block;
+  animation: dropdown-submenu 0.3s forwards;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 47px;
+  left: -90px;
+  background-color: #023d588b;
+  border: 3px solid #00000041;
+  z-index: 2;
+}
+
+.sub-menu img {
+  width: 50px;
+  height: 50px;
+}
+
+.sub-menu::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -14px;
+  left: 99px;
+  width: 0;
+  height: 0;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 13px solid #0c0c0c;
+}
+
+.sub-menu li a:hover {
+  color: white;
+}

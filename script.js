@@ -1,5 +1,9 @@
-import lightMode from "./modules/lightMode.js";
+import light_DarkToggleMode from "./modules/lightToggleMode.js";
 import menuTabs from "./modules/menuTabs.js";
+import initsmoothScroll from "./modules/smoothScroll.js";
+import initSubMenu from "./modules/dropdown-submenu.js";
 
 menuTabs();
-lightMode();
+light_DarkToggleMode();
+initsmoothScroll();
+initSubMenu();

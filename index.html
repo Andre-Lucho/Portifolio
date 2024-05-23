@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,27 +18,60 @@
   </head>
   <body>
     <div class="main-structure">
-      <header class="header">
+
+      <header class="header" data-header="header">
         <div class="title">
           <h1 class="logo">André Lucho</h1>
-          <span>(Futuro) Web Designer/Front-end Developer</span>
+          <span>Web Designer/ (Futuro) Front-end Developer</span>
         </div>
         <div class="nav">
           <ul class="nav-elements">
-            <li><a href="#contacts">Contato</a></li>
-            <li><img src="./Imgs/lua_mini.png" /></li>
+            <li data-submenu>
+              <a href="#contact">Contato</a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="https://www.linkedin.com/in/dev-andre-lucho/">
+                    <img src="./Imgs/Logos/linkedin.png"/>Linkedin</a>
+                </li>
+                <li>
+                  <a href="https://www.github.com/Andre-Lucho">
+                    <img src="./Imgs/Logos/github-logo2.png"/>GitHub</a>
+                  
+                </li>  
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <img src="./Imgs/Logos/instagram.jpg"/>Instagram</a>
+                    
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/andre.lucho1">
+                    <img src="./Imgs/Logos/facebook.jpg"/>Facebook</a>
+                <li>
+                  <a href="tel:+5551991431880">+55 51 99143.1880</a>
+                </li>
+                <li>
+                  <a href="email:andretlucho@gmail.com">andretlucho@gmail.com"</a>
+                </li>
+              </ul>
+            </li>
+                  <li class="navImg">
+                    <img
+                src="./Imgs/Icones/header/sol_pixel2.png"
+                alt="moon-icon-img"
+                />
+              </li>
           </ul>
         </div>
       </header>
 
-      <nav class="side-nav">
+      <nav class="side-nav" data-menu="buttons">
         <ul class="buttons">
           <li>
-            <img />
+            <img src="./Imgs/Icones/side-nav/man.png" data-img="#about" />
             <a href="#about">Sobre</a>
           </li>
           <li>
-            <img />
+            <img src="./Imgs/Icones/side-nav/coffee.png" data-img="#projects" />
             <a href="#projects">Projetos</a>
             <!-- <ul>
               <li>
@@ -50,7 +83,7 @@
             </ul> -->
           </li>
           <li>
-            <img />
+            <img src="./Imgs/Icones/side-nav/desktop.png" data-img="#skills" />
             <a href="#skills">Habilidades Desenvolvidas</a>
             <!-- <ul>
               <li>
@@ -62,16 +95,19 @@
             </ul> -->
           </li>
           <li>
-            <img />
-            <a href="#knowledge">Formações</a>
+            <img src="./Imgs/Icones/side-nav/cap.png" data-img="#knowledge" />
+            <a href="#knowledge">Formação</a>
           </li>
           <li>
-            <img />
+            <img
+              src="./Imgs/Icones/side-nav/c75c811b-eb6b-4184-b5bd-dabfe2d35249.png"
+              data-img="#volunteer_work"
+            />
             <a href="#volunteer_work">Trabalhos Sociais</a>
           </li>
           <li>
-            <img />
-            <a href="#contacts">Contatos</a>
+            <img src="./Imgs/Icones/side-nav/phone.png " data-img="#contact" />
+            <a href="#contact">Contatos</a>
           </li>
         </ul>
       </nav>
@@ -80,8 +116,11 @@
         <section class="content-section" id="about">
           <h1>Sobre</h1>
           <div class="title-section">
-            Farmacêutico por formação. Futuro Desenvolvedor Front-end por
-            <spam>PAIXÃO!</spam><br />
+            <p>
+              Farmacêutico por formação...<br />
+              Web-Designer e (Futuro) Desenvolvedor Front-end por
+              <b>PAIXÃO!</b><br /><br />
+            </p>
           </div>
           <div class="description-session">
             Desde 2022, estudo e me dedico integralmente ao mundo da TI, nas
@@ -97,64 +136,112 @@
           <h1>Projetos</h1>
           <ul>
             <li>
-              <h2>Profissionais</h2>
-              <h2>Web Desing</h2>
               <div class="title-section">
-                Vinhos Web + Pimentaria Dedo-de-moça
+                <h2>Profissionais</h2>
+                <h2>Web Desing</h2>
               </div>
+              <p><b>Vinhos Web + Pimentaria Dedo-de-moça Ltda</b></p>
               <div class="description-session">
-                Cards para promoção de vendas em Mídias Sociais - Whatsapp /
-                Instagram / Facebook
+                <p>
+                  Cards para promoção de vendas em Mídias Sociais - Whatsapp /
+                  Instagram / Facebook.
+                </p>
               </div>
-              <h2>Front-End Developer</h2>
+              <div class="title-section">
+                <h2>Front-End Developer</h2>
+              </div>
               <div class="title-section">Em Busca</div>
               <div class="description-session">Em Busca</div>
             </li>
             <li>
-              <h2>Pessoais</h2>
-              <span>A Preencher</span>
+              <div class="title-section">
+                <h2>Pessoais</h2>
+                <h2>Web Desing</h2>
+              </div>
+              <div class="title-section">
+                <h2>Profissionais</h2>
+              </div>
             </li>
           </ul>
         </section>
 
         <section class="content-section" id="skills">
           <h1>Habilidades Desenvolvidas</h1>
+          <div class="title-section">
+            <h2>Web Desing</h2>
+          </div>
+          <div class="description-session">
+            <p>
+              Canva<br />
+              MidJourney<br />
+              Stable Diffusion
+            </p>
+          </div>
 
-          <h2>Web Desing</h2>
-          <p>
-            Canva<br />
-            MidJourney<br />
-            Stable Diffusion
-          </p>
+          <div class="title-section">
+            <h2>Front-End Developer</h2>
+          </div>
+          <div class="description-session">
+            <p>
+              HTML<br />
+              CSS<br />
+              Javascript<br />
+              React-js<br />
+              Git / GitHub <br />
+            </p>
+          </div>
 
-          <h2>Front-End Developer</h2>
-          <p>
-            HTML<br />
-            CSS<br />
-            Javascript<br />
-            React-js<br />
-            Git / GitHub <br />
-          </p>
-
-          <p>Sistemas Operacionais Windows e Linux</p>
-          <p>Montagem e Manutenção de Computadores</p>
+          <div class="title-section">
+            <h2>Outros</h2>
+          </div>
+          <div class="description-session">
+            <p>Sistemas Operacionais Windows e Linux</p>
+            <p>Montagem e Manutenção de Computadores</p>
+          </div>
         </section>
 
         <section class="content-section" id="knowledge">
-          <h1>Formações</h1>
-
-          <div class="title-section"></div>
-          <div class="description-session"></div>
+          <h1>Formação</h1>
+          <div class="title-section">
+            <h2>Web Designer e Desenvolvedor</h2>
+            <h2>Cursos Profissionalizantes</h2>
+          </div>
+          <div class="description-session">
+            <p>Lógica de Programação - Logicamente Pro - Prof. Márcio Santos</p>
+            <p>Desenvolvimento Full Stack com JavaScript- OneBitCode</p>
+            <p>Web Designer e Programador Front-End - Origamid</p>
+          </div>
+          <div class="title-section">
+            <h2>Farmácia</h2>
+          </div>
+          <div class="description-session">
+            <p>Farmacêutico Bioquímico - PUCRS</p>
+            <p>Especialista em Farmácia Magistral - Equilibra (PR)</p>
+          </div>
         </section>
 
         <section class="content-section" id="volunteer_work">
           <h1>Trabalhos Sociais</h1>
+          <div class="title-section">
+            <h2>Casa do Jardim</h2>
+          </div>
+          <div class="description-session">
+            <p>Arrecadação e organização de roupas para doação;<br>
+              Coordenador de reuniões de estudo<br>
+              Atendimento à pessoas necessitadas;<br>
+              Auxílio em eventos beneficentes.</p>
+          <div class="title-section">
+            <h2>IBACEMA - Casa da Volta do Campo</h2>
+          </div>
+          <div class="description-session">
+            <p>Arrecadação e organização de roupas para doação;<br>
+              Coordenador de reuniões de estudo<br>
+              Atendimento à pessoas necessitadas;<br>
+              Auxílio em eventos beneficentes.</p>
 
-          <div class="title-section"></div>
-          <div class="description-session"></div>
         </section>
 
-        <section class="content-section" id="contacts">
+        <section class="content-section" id="contact">
           <h1>Contatos</h1>
           <a href="tel:+5551991431880">+55 51 99143.1880</a><br />
           <a href="email:andretlucho@gmail.com">andretlucho@gmail.com"</a>
@@ -162,18 +249,28 @@
       </main>
 
       <footer class="footer">
-        <a href="https://www.linkedin.com/in/dev-andre-lucho/"
-          ><img src="./Imgs/Logos/linkedin.png"
-        /></a>
-        <a href="https://www.github.com/Andre-Lucho"
-          ><img src="./Imgs/Logos/github-logo2.png"
-        /></a>
-        <a href="https://www.instagram.com/"
-          ><img src="./Imgs/Logos/instagram.jpg"
-        /></a>
-        <a href="https://www.facebook.com/andre.lucho1"
-          ><img src="./Imgs/Logos/facebook.jpg"
-        /></a>
+        <ul class="contacts">
+          <li>
+            <a href="https://www.linkedin.com/in/dev-andre-lucho/">
+              <img src="./Imgs/Logos/linkedin.png"/></a>
+          </li>
+          <li>
+            <a href="https://www.github.com/Andre-Lucho">
+              <img src="./Imgs/Logos/github-logo2.png"/></a>
+          <li>
+            <a href="https://www.instagram.com/">
+              <img src="./Imgs/Logos/instagram.jpg"/></a>
+          <li>
+            <a href="https://www.facebook.com/andre.lucho1">
+              <img src="./Imgs/Logos/facebook.jpg"/></a>
+          <li>
+            <a href="tel:+5551991431880">+55 51 99143.1880</a>
+          <li>
+            <a href="email:andretlucho@gmail.com">andretlucho@gmail.com"</a>
+
+
+        </ul>
+
       </footer>
     </div>
 

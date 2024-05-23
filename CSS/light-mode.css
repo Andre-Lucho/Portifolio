@@ -1,4 +1,7 @@
 body.activated {
-  background-color: #ddddd6;
-  color: #000000de;
+  background: linear-gradient(135deg, #02a3eb, #023d58);
+  color: #e8e8e8;
 }
+
+/* #ddddd6 */
+/* #4282eb */
