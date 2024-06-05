@@ -1,44 +1,48 @@
-[data-submenu] {
+[data-contactMenu] {
   position: relative;
 }
 
-[data-submenu] .sub-menu {
+[data-contactMenu] .contact-subMenu {
   display: none;
 }
 
-[data-submenu].activated .sub-menu,
-[data-submenu]:hover .sub-menu {
+[data-contactMenu].activated .contact-subMenu,
+[data-contactMenu]:hover .contact-subMenu {
   display: block;
   animation: dropdown-submenu 0.3s forwards;
 }
 
-.sub-menu {
+/*  */
+.contact-subMenu {
   position: absolute;
   top: 47px;
   left: -90px;
-  background-color: #023d588b;
+  background-color: #023d58a6;
   border: 3px solid #00000041;
   z-index: 2;
 }
 
-.sub-menu img {
+.contact-subMenu a:hover {
+  color: #e8e8e8;
+}
+.contact-subMenu img {
   width: 50px;
   height: 50px;
 }
 
-.sub-menu::before {
+.contact-subMenu::before {
   content: "";
   display: block;
   position: absolute;
-  top: -14px;
+  top: -11px;
   left: 99px;
   width: 0;
   height: 0;
   border-left: 11px solid transparent;
   border-right: 11px solid transparent;
-  border-bottom: 13px solid #0c0c0c;
+  border-bottom: 12px solid #0c0c0c;
 }
 
-.sub-menu li a:hover {
+.contact-sub-menu li a:hover {
   color: white;
 }

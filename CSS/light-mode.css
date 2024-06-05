@@ -3,5 +3,14 @@ body.activated {
   color: #e8e8e8;
 }
 
-/* #ddddd6 */
-/* #4282eb */
+body.activated .sub-menu {
+  color: #e8e8e8;
+}
+
+body.activated .sub-menu a:hover {
+  color: #000000de;
+}
+
+.side-nav a:hover {
+  color: #000000de;
+}

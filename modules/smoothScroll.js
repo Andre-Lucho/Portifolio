@@ -4,9 +4,6 @@ export default function initsmoothScroll() {
     "[data-menu='buttons'] a[href^='#']"
   );
   const sideNavimgs = document.querySelectorAll("[data-menu='buttons'] img");
-  const contactlink = document.querySelector(
-    "[data-header='header'] a[href^='#']"
-  );
 
   // Funções CallBack
   function linkSmoothScroll(e) {
@@ -35,5 +32,4 @@ export default function initsmoothScroll() {
   sideNavimgs.forEach((link) => {
     link.addEventListener("click", imgSmoothScroll);
   });
-  contactlink.addEventListener("click", linkSmoothScroll);
 }

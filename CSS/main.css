@@ -8,7 +8,6 @@
 body {
   background: linear-gradient(135deg, #023d58, #02a3eb);
   color: #000000de;
-
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -18,19 +17,21 @@ a {
 }
 
 ul {
+  text-decoration: none;
   list-style: none;
 }
 
 img {
+  /* aspect-ratio: 1; */
   width: 100px;
-  height: 80px;
+  height: 100px;
   cursor: pointer;
 }
 
-.navImg img {
+/* .navImg img {
   width: 40px;
   height: 40px;
-}
+} */
 
 .main-structure {
   display: grid;
@@ -79,13 +80,17 @@ img {
 
 .nav-elements {
   display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 .nav-elements a {
+  background-color: #023d58;
   display: flex;
-  margin-right: 15px;
+  margin-right: 0.9rem;
   font-weight: bold;
-  padding: 15px;
+  padding: 0.7rem 0.9rem;
+  border-radius: 6px;
 }
 
 .nav-elements img {

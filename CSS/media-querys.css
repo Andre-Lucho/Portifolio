@@ -1,4 +1,4 @@
-@media (max-width: 1535px) {
+@media (max-width: 1635px) {
   .main-structure {
     display: grid;
     grid-template:
@@ -28,6 +28,20 @@
   }
 }
 
+@media (max-width: 750px) {
+  nav .side-button {
+    display: flex;
+  }
+
+  [data-menu="side-list"] {
+    display: none;
+  }
+
+  [data-menu="side-list"].activated {
+    display: block;
+    animation: drop-right 0.5s forwards;
+  }
+}
 /* 1150 */
 
 /* 800 */

@@ -24,28 +24,28 @@
           <h1 class="logo">André Lucho</h1>
           <span>Web Designer/ (Futuro) Front-end Developer</span>
         </div>
-        <div class="nav">
+        <nav class="nav">
           <ul class="nav-elements">
-            <li data-submenu>
-              <a href="#contact">Contato</a>
-              <ul class="sub-menu">
+            <li data-contactMenu>
+              <a href="#">Contato</a>
+              <ul class="contact-subMenu">
                 <li>
                   <a href="https://www.linkedin.com/in/dev-andre-lucho/">
                     <img src="./Imgs/Logos/linkedin.png"/>Linkedin</a>
                 </li>
                 <li>
                   <a href="https://www.github.com/Andre-Lucho">
-                    <img src="./Imgs/Logos/github-logo2.png"/>GitHub</a>
+                    <img src="./Imgs/Logos/Github.png"/>GitHub</a>
                   
                 </li>  
                 <li>
                   <a href="https://www.instagram.com/">
-                    <img src="./Imgs/Logos/instagram.jpg"/>Instagram</a>
+                    <img src="./Imgs/Logos/Instagran.jpeg"/>Instagram</a>
                     
                 </li>
                 <li>
                   <a href="https://www.facebook.com/andre.lucho1">
-                    <img src="./Imgs/Logos/facebook.jpg"/>Facebook</a>
+                    <img src="./Imgs/Logos/facebook.png"/>Facebook</a>
                 <li>
                   <a href="tel:+5551991431880">+55 51 99143.1880</a>
                 </li>
@@ -56,16 +56,19 @@
             </li>
                   <li class="navImg">
                     <img
-                src="./Imgs/Icones/header/sol_pixel2.png"
+                src="./Imgs/Icones/header/moon02.png"
                 alt="moon-icon-img"
                 />
               </li>
           </ul>
-        </div>
+        </nav>
       </header>
 
       <nav class="side-nav" data-menu="buttons">
-        <ul class="buttons">
+        <button class='side-button'  aria-expanded="false" aria-controls="side-menu" data-menu="side-button">
+          Menu
+        </button>
+        <ul class="buttons" id="side-menu" data-menu='side-list'>
           <li>
             <img src="./Imgs/Icones/side-nav/man.png" data-img="#about" />
             <a href="#about">Sobre</a>
@@ -100,7 +103,7 @@
           </li>
           <li>
             <img
-              src="./Imgs/Icones/side-nav/c75c811b-eb6b-4184-b5bd-dabfe2d35249.png"
+              src="./Imgs/Icones/side-nav/handshake.png"
               data-img="#volunteer_work"
             />
             <a href="#volunteer_work">Trabalhos Sociais</a>
@@ -252,21 +255,27 @@
         <ul class="contacts">
           <li>
             <a href="https://www.linkedin.com/in/dev-andre-lucho/">
-              <img src="./Imgs/Logos/linkedin.png"/></a>
+              <img src="./Imgs/logos/LinkedIn.png">
           </li>
           <li>
-            <a href="https://www.github.com/Andre-Lucho">
-              <img src="./Imgs/Logos/github-logo2.png"/></a>
+            <a href="https://www.github.com/Andre-Lucho/">
+              <img src="./Imgs/Logos/Github.png"/></a>
+          </li>
           <li>
             <a href="https://www.instagram.com/">
-              <img src="./Imgs/Logos/instagram.jpg"/></a>
+              <img src="./Imgs/Logos/Instagran.jpeg"/></a>
+          </li>
           <li>
             <a href="https://www.facebook.com/andre.lucho1">
-              <img src="./Imgs/Logos/facebook.jpg"/></a>
+              <img src="./Imgs/Logos/facebook.png"/></a>
+          </li>
           <li>
             <a href="tel:+5551991431880">+55 51 99143.1880</a>
+          </li>
           <li>
             <a href="email:andretlucho@gmail.com">andretlucho@gmail.com"</a>
+          </li>
+
 
 
         </ul>
