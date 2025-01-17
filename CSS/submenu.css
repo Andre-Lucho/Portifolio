@@ -6,8 +6,7 @@
   display: none;
 }
 
-[data-contactMenu].activated .contact-subMenu,
-[data-contactMenu]:hover .contact-subMenu {
+[data-contactMenu].activated .contact-subMenu {
   display: block;
   animation: dropdown-submenu 0.3s forwards;
 }
@@ -31,7 +30,7 @@
 }
 
 .contact-subMenu::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: -11px;
