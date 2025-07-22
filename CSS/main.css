@@ -8,7 +8,7 @@
 body {
   background: linear-gradient(135deg, #023d58, #02a3eb);
   color: #000000de;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'IBM Plex Mono', 'monospace';
 }
 
 a {
@@ -60,9 +60,9 @@ img {
 }
 
 .title h1 {
-  font-family: 'Permanent Marker';
+  font-family: 'Space Grotesk';
   font-size: 3.2rem;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .title span {

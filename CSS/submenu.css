@@ -14,7 +14,7 @@
 /*  */
 .contact-subMenu {
   position: absolute;
-  top: 47px;
+  top: 55px;
   left: -90px;
   background-color: #023d58a6;
   border: 3px solid #00000041;
@@ -24,22 +24,23 @@
 .contact-subMenu a:hover {
   color: #e8e8e8;
 }
+
 .contact-subMenu img {
-  width: 50px;
-  height: 50px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .contact-subMenu::before {
   content: '';
   display: block;
   position: absolute;
-  top: -11px;
-  left: 99px;
+  top: -17px;
+  left: 130px;
   width: 0;
-  height: 0;
-  border-left: 11px solid transparent;
-  border-right: 11px solid transparent;
-  border-bottom: 12px solid #0c0c0c;
+  height: -10px;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 16px solid #0c0c0c;
 }
 
 .contact-sub-menu li a:hover {
