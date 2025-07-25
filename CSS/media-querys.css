@@ -1,43 +1,13 @@
-@media (max-width: 1635px) {
-  .main-structure {
-    display: grid;
-    grid-template:
-      ". header" 0.7fr
-      "side-nav main-content ." 1fr
-      "side-nav main-content ." 1fr
-      "footer footer" 0.5fr
-      / 1fr 2fr 50px;
-  }
-
-  .header {
-    grid-area: header;
-    grid-template:
-      ". title nav"
-      /0.8fr 0.5fr;
-  }
-
-  .title {
-    display: block;
-  }
-  .title span {
-    margin-left: 0;
-  }
-
-  .nav {
-    margin-left: 5rem;
-  }
-}
-
 @media (max-width: 750px) {
   nav .side-button {
     display: flex;
   }
 
-  [data-menu="side-list"] {
+  [data-menu='side-list'] {
     display: none;
   }
 
-  [data-menu="side-list"].activated {
+  [data-menu='side-list'].activated {
     display: block;
     animation: drop-right 0.5s forwards;
   }

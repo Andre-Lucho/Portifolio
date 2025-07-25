@@ -1,16 +1,20 @@
 body.activated {
   background: linear-gradient(135deg, #02a3eb, #023d58);
-  color: #e8e8e8;
+  color: #d1d0d0;
 }
 
 body.activated .sub-menu {
-  color: #e8e8e8;
+  color: #d1d0d0;
 }
 
-body.activated .sub-menu a:hover {
+body.activated .header-button:hover {
   color: #000000de;
 }
 
-.side-nav a:hover {
+body.activated .contact-subMenu a:hover {
+  color: #000000de;
+}
+
+body.activated .side-nav a:hover {
   color: #000000de;
 }
