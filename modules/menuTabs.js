@@ -3,6 +3,9 @@ export default function menuTabs() {
   const sections = document.querySelectorAll('.content-section');
   const sideButtons = document.querySelectorAll('.buttons img');
   const sideLinks = document.querySelectorAll('.buttons a');
+  console.log(sections);
+
+  console.log(sideButtons);
 
   sections[0].classList.add('activated');
 

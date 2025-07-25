@@ -1,13 +1,3 @@
-:root {
-  --general-font-size: 1.125rem;
-  --title-font: 3rem;
-  --subtitle-font: 2rem;
-  --sub-subtitle-font: 1.5rem;
-  --general-font-family: 'Open Sans', sans-serif;
-  --menu-font-family: 'IBM Plex Mono', monospace;
-  --titles-font-family: 'Nunito Sans', sans-serif;
-}
-
 body,
 p,
 h1,
@@ -17,7 +7,7 @@ ul,
 li {
   margin: 0;
   padding: 0;
-  font-size: var(--general-font-size);
+  font-size: 1.125rem;
 }
 
 * {
@@ -27,7 +17,7 @@ li {
 body {
   background: linear-gradient(135deg, #023d58, #02a3eb);
   color: #000000de;
-  font-family: var(--general-font-family);
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -69,13 +59,13 @@ header .nav {
 }
 
 .title h1 {
-  font-family: var(--menu-font-family);
-  font-size: var(--title-font);
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 3rem;
   font-weight: 1000;
 }
 
 .title span {
-  font-family: var(--menu-font-family);
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 1.1rem;
 }
 
@@ -154,28 +144,54 @@ header .nav {
 }
 
 .content-section h1 {
-  padding-bottom: 20px;
-  font-size: var(--subtitle-font);
+  padding-bottom: 30px;
+  font-size: 2.2rem;
 }
 
 .description-section {
-  padding: 10px 0;
+  padding-bottom: 10px;
+  /* border: 1px solid; */
+}
+
+.description-section .title-section {
+  padding-bottom: 10px;
 }
 
 .description-section .title-section h2 {
-  font-size: var(--sub-subtitle-font);
-  padding: 10px 0;
+  font-size: 1.8rem;
+}
+.description-section .description-projects {
+  padding-bottom: 10px;
+}
+
+.description-section .title-projects {
+  padding: 10px 0 5px 0;
+}
+
+.description-section .subtitle-section {
+  padding: 5px 0;
 }
 
 .description-section .subtitle-section h2 {
+  font-size: 1.3rem;
 }
 
-.description-section .subtitle-section h2 {
+.description-section .description-section-div {
+  padding-bottom: 10px;
+}
+
+.description-section .description-about {
+  padding-bottom: 30px;
+}
+
+.description-section .description-about p {
+  font-size: 1.2rem;
 }
 
 .contacts p {
   width: fit-content;
   padding-bottom: 10px;
+  font-weight: 600;
 }
 
 .contacts p:hover {
