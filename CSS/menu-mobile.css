@@ -11,7 +11,7 @@
 }
 
 .side-button::before {
-  content: "";
+  content: '';
   display: inline-block;
   margin-right: 5.5px;
   height: 2.3px;
@@ -21,15 +21,6 @@
   transition: transform 0.2s;
 }
 
-[data-menu="side-button"].activated::before {
+[data-menu='side-button'].activated::before {
   transform: rotate(90deg);
 }
-
-/* 
-Media-query:
-
-Side-Nav:
-criar o menu com o sub-menu contendo apenas as palavras (sobre, projetos...)
-e jogar os ícones para o lado do grid-principal
-
-*/

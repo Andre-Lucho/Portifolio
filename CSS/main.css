@@ -2,6 +2,7 @@ body,
 p,
 h1,
 h2,
+span,
 div,
 ul,
 li {
@@ -36,7 +37,7 @@ ul {
     '. header header' 0.4fr
     'side-nav main-content main-content' 1fr
     'side-nav main-content main-content' 1fr
-    'footer footer footer' 0.5fr
+    'footer-background footer-background footer-background' 0.3fr
     / 0.8fr 2fr 0.8fr;
 }
 
@@ -45,12 +46,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 header .title {
   padding: 20px;
   padding-left: 0;
+}
+
+header .title p {
+  display: inline;
+}
+
+header .title span {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.1rem;
 }
 
 header .nav {
@@ -64,7 +74,7 @@ header .nav {
   font-weight: 1000;
 }
 
-.title span {
+.title p {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1.1rem;
 }
@@ -136,11 +146,12 @@ header .nav {
 
 .main-content {
   grid-area: main-content;
-  margin: 15px 10px 10px 20px;
+  margin: 15px 30px 10px 20px;
 }
 
 .content-section {
   padding: 20px;
+  padding-right: 20px;
 }
 
 .content-section h1 {
@@ -150,7 +161,6 @@ header .nav {
 
 .description-section {
   padding-bottom: 10px;
-  /* border: 1px solid; */
 }
 
 .description-section .title-section {
@@ -198,21 +208,26 @@ header .nav {
   color: #d1d0d0;
 }
 
-.footer {
-  grid-area: footer;
+.footer-background {
+  grid-area: footer-background;
   display: flex;
-  justify-content: center;
   align-items: flex-end;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
 }
 
 .footer .footer-contacts {
   display: flex;
   align-items: center;
+  border-radius: 6px;
 }
 
 .footer .footer-contacts li {
   margin: 10px;
+}
+
+.footer .footer-contacts img {
+  display: block;
+  max-width: 40px;
 }
