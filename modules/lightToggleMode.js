@@ -19,7 +19,6 @@ export default function light_DarkToggleMode() {
     bodyNode.classList.toggle('activated');
   }
 
-  // Eventos
   moonImg.addEventListener('click', lightModeActivation);
   sunImg.addEventListener('click', darkModeActivation);
 }
