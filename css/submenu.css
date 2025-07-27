@@ -5,8 +5,8 @@
 [data-contactMenu] .contact-subMenu {
   display: none;
   position: absolute;
-  top: 55px;
-  left: -90px;
+  top: 50px;
+  left: -80px;
   background-color: #023d58a6;
   border: 3px solid #00000041;
   z-index: 2;
@@ -60,8 +60,8 @@
   content: '';
   display: block;
   position: absolute;
-  top: -17px;
-  left: 130px;
+  top: -20px;
+  left: 112px;
   width: 0;
   height: -10px;
   border-left: 14px solid transparent;
