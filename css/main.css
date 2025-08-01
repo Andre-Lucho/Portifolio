@@ -163,6 +163,10 @@ header .nav {
   padding-bottom: 10px;
 }
 
+.description-section a:hover {
+  color: #d1d0d0;
+}
+
 .description-section .title-section {
   padding-bottom: 10px;
 }
