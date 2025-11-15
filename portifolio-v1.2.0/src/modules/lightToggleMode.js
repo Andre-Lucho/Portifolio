@@ -4,7 +4,7 @@ export default function light_DarkToggleMode() {
   const liNode = document.querySelector('.navImg');
 
   const sunImg = document.createElement('img');
-  sunImg.setAttribute('src', './Imgs/Icones/header/moon02.png');
+  sunImg.setAttribute('src', './src/assets/Imgs/Icones/header/moon02.png');
   sunImg.setAttribute('alt', 'sun-icon-img');
 
   function lightModeActivation() {
