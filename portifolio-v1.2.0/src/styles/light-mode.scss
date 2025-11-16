@@ -1,0 +1,38 @@
+@use 'variables.scss';
+
+body.activated {
+  background: linear-gradient(135deg, #02a3eb, #023d58);
+  color: var(--lt-cl-primary);
+
+  .main-structure {
+    .nav {
+      .nav-elements {
+        .header-button:hover {
+          color: var(--dt-cl-primary);
+        }
+      }
+    }
+
+    .contact-subMenu {
+      a:hover {
+        color: var(--dt-cl-primary);
+      }
+    }
+
+    .side-nav {
+      .buttons {
+        a:hover {
+          color: var(--dt-cl-primary);
+        }
+      }
+    }
+
+    .footer-background {
+      .footer-contacts {
+        a:hover {
+          color: var(--dt-cl-primary);
+        }
+      }
+    }
+  }
+}

@@ -10,15 +10,14 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./src/styles/style.css" />
+  <link rel="stylesheet" href="./src/styles/style.scss" />
 </head>
 
 <body>
   <div class="main-structure">
-
     <header class="header" data-header="header">
-      <div class="title">
-        <h1 class="logo">André Lucho</h1>
+      <div class="header-title">
+        <h1 class="header-logo">André Lucho</h1>
         <p>Designer de Interfaces +</p>
         <span>FullStack Developer</span>
       </div>
@@ -97,18 +96,18 @@
       <section class="content-section" id="about">
         <h1>Sobre</h1>
         <div class="description-section">
-          <div class="description-section-div description-about">
+          <div class="description-div about">
             <p>
               Farmacêutico por formação...<br />
               Desenvolvedor FullStack por
               <b>PAIXÃO!</b>
             </p>
           </div>
-          <div class="description-section-div description-about">
+          <div class="description-div about">
             <p>Desenvolvedor FullStack e Designer de Interfaces Digitais dedicado e apaixonado pela área de TI desde muito jovem.</p>
             <p>Desde 2022, venho realizando minha migração profissional para a área de TI, focando em Desenvolvimento FullStack e em Design de Interfaces.</p>
           </div>
-          <div class="description-section-div description-about">
+          <div class="description-div about">
             <p>Sou muito estudioso e dedicado.</p>
             Estou sempre em busca de um melhor aprimoramento técnico e profissional, buscando
             crescer pessoalmente com as pessoas com quem me relaciono...Evoluindo, sempre!
@@ -120,32 +119,25 @@
       <section class="content-section" id="projects">
         <h1>Projetos</h1>
         <div class="description-section">
-          <div class="title-section title-projects">
+          <div class="section-title projects-title">
             <h2>Profissionais</h2>
           </div>
-          <div class="subtitle-section">
+          <div class="section-subtitle">
             <h2>Desing de Interfaces</h2>
           </div>
-          <div class="description-section-div">
+          <div class="description-div">
             <p><b>Vinhos Web + Pimentaria Dedo-de-moça Ltda</b></p>
             <p>Artes (Cards) para promoção de vendas em Mídias Sociais - Whatsapp | Instagram | Facebook</p>
           </div>
         </div>
-        <div class="description-section">
-          <div class="subtitle-section">
-            <h2>Desenvolvedor Front-End e FullStack</h2>
-            <p>Em Busca</p>
-          </div>
-          <div class="description-section-div"></div>
-        </div>
-        <div class="description-section description-projects">
-          <div class="title-section title-projects">
+        <div class="description-section projects">
+          <div class="section-title projects-title">
             <h2>Pessoais</h2>
           </div>
-          <div class="subtitle-section">
+          <div class="section-subtitle">
             <h2>Desenvolvedor Front-End</h2>
           </div>
-          <div class="description-section-div">
+          <div class="description-div">
             <p><a href="https://github.com/Andre-Lucho/projeto-final-felinos-selvagens.git">Projeto Felinos Selvagens - Projeto Final Curso Front-End - Origamid</a></p>
             <p></p>
 
@@ -156,7 +148,7 @@
       <section class="content-section" id="skills">
         <h1>Habilidades Desenvolvidas</h1>
         <div class="description-section">
-          <div class="title-section">
+          <div class="section-title">
             <h2>Desing de Interfaces</h2>
             <ul>
               <li>Canva</li>
@@ -167,7 +159,7 @@
           </div>
         </div>
         <div class="description-section">
-          <div class="title-section">
+          <div class="section-title">
             <h2>Front-End Developer</h2>
             <ul>
               <li>HTML</li>
@@ -180,19 +172,19 @@
           </div>
         </div>
         <div class="description-section">
-          <div class="title-section">
+          <div class="section-title">
             <h2>Outros</h2>
           </div>
-          <div class="subtitle-section">
+          <div class="section-subtitle">
             <p><b>Sistemas Operacionais</b></p>
           </div>
-          <div class="description-section-div">
+          <div class="description-div">
             <ul>
               <li>Windows</li>
               <li>Linux</li>
             </ul>
           </div>
-          <div class="subtitle-section">
+          <div class="section-subtitle">
             <p><b>Montagem e Manutenção de Computadores</b></p>
           </div>
         </div>
@@ -201,10 +193,10 @@
       <section class="content-section" id="development-skills">
         <h1>Habilidades em Desenvolvimento</h1>
         <div class="description-section">
-          <div class=" title-section">
+          <div class=" section-title">
             <h2>Desenvolvimento Front-End</h2>
           </div>
-          <div class="subtitle-section">
+          <div class="section-subtitle">
             <h2>Frameworks / Bibliotecas CSS</h2>
             <ul>
               <li>Bootstrap</li>
@@ -213,29 +205,29 @@
           </div>
           </br>
           <div class="description-section">
-            <div class=" title-section">
+            <div class=" section-title">
               <h2>Desenvolvimento Back-End</h2>
             </div>
-            <div class="subtitle-section">
+            <div class="section-subtitle">
               <h2>Linguagens</h2>
               <ul>
                 <li>Java</li>
                 <li>Pyton</li>
               </ul>
             </div>
-            <div class="subtitle-section">
+            <div class="section-subtitle">
               <h2>FrameWorks</h2>
               <ul>
                 <li>Spring Boot</li>
               </ul>
             </div>
-            <div class="subtitle-section">
+            <div class="section-subtitle">
               <h2>Banco de Dados</h2>
               <ul>
                 <li>SQL - MySQL | PostgreSQL</li>
               </ul>
             </div>
-            <div class="subtitle-section">
+            <div class="section-subtitle">
               <h2>Testes</h2>
               <ul>
                 <li>Testes Unitários e de Integração: Jest, JUnit e Mockito</li>
@@ -247,18 +239,18 @@
       <section class="content-section" id="knowledge">
         <h1>Formação</h1>
         <div class="description-section">
-          <div class="title-section">
+          <div class="section-title">
             <h2>Desenvolvedor FullStack</h2>
             <p>Lógica de Programação - Logicamente Pro - Prof. Márcio Santos</p>
             <p>Desenvolvimento FullStack com JavaScript- OneBitCode</p>
             <p>Web Designer e Programador Front-End - Origamid</p>
             <p>Desenvolvedor FullStack +PraTI - Turma 2025 (em andamento)</p>
           </div>
-          <div class="description-section-div">
+          <div class="description-div">
           </div>
         </div>
         <div class="description-section">
-          <div class="title-section">
+          <div class="section-title">
             <h2>Farmácia</h2>
             <p>Farmacêutico Bioquímico - PUCRS - 2009</p>
             <p>Especialista em Farmácia Magistral - Equilibra (PR)</p>
@@ -269,25 +261,25 @@
       <section class="content-section" id="volunteer_work">
         <h1>Trabalhos Sociais</h1>
         <div class="description-section">
-          <div class="title-section">
+          <div class="section-title">
             <h2>Casa do Jardim</h2>
             <p>Membro do Conselho Diretor da Instituição</p>
             <p>Coordenador de reuniões de estudo</p>
             <p>Atendimento à pessoas necessitadas</p>
             <p>Auxílio em eventos beneficentes</p>
           </div>
-          <div class="description-section-div"></div>
+          <div class="description-div"></div>
         </div>
         <div class="description-section">
-          <div class="title-section">
+          <div class="section-title">
             <h2>IBACEMA - Casa da Volta do Campo</h2>
             <p>Coordenador de reuniões de estudo</p>
             <p> Atendimento à pessoas necessitadas</p>
           </div>
-          <div class="description-section-div"></div>
+          <div class="description-div"></div>
         </div>
         <div class="description-section">
-          <div class="title-section">
+          <div class="section-title">
             <h2>Palestras públicas diversas</h2>
           </div>
         </div>
@@ -296,7 +288,7 @@
       <section class="content-section" id="contact">
         <h1>Contatos</h1>
         <div class="description-section">
-          <div class="description-section-div contacts">
+          <div class="description-div contacts">
             <p><a href="tel:+5551991431880">+55 51 99143.1880</a></p>
             <p> <a href="email:andretlucho@gmail.com">andretlucho@gmail.com</a></p>
             <p><a href="https://www.linkedin.com/in/dev-andre-lucho/">Linkedin</a></p>
@@ -309,7 +301,7 @@
     </main>
 
     <div class="footer-background">
-      <footer class="footer">
+      <footer>
         <ul class="footer-contacts">
           <li>
             <a href="https://www.linkedin.com/in/dev-andre-lucho/">
